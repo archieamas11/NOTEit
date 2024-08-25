@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 50px 0 0 0;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+}
+
+
+/* CSS FOR NAVBAR */
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.navdiv {
+    margin: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+.navbar ul li a {
+    color: #272727;
+    font-weight: 600;
+    font-size: 19px;
+    transition: transform 0.3s ease;
+}
+
+.logo h1 {
+    color: #272727;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+span {
+    color: #00b594;
+}

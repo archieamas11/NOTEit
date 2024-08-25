@@ -1,0 +1,14 @@
+.navbar ul li a.register {
+    text-decoration: underline;
+    color: rgb(2, 2, 189);
+}
+
+.navbar ul li a.signin,
+.navbar ul li a.home {
+    color: #272727;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: rgb(2, 2, 189);
+}
