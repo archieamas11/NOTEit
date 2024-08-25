@@ -9,13 +9,12 @@
     text-decoration: none;
 }
 
-
 .navbar ul li a:hover {
     color: rgb(2, 2, 189);
 }
 
 /* FOR SIGN IN CONTENT */
-.home-content {
+.login-content {
     display: flex;
     justify-content: center;
     /* Centers the .wrapper horizontally */
@@ -83,14 +82,14 @@
     margin-right: 5px;
 }
 
-.home-content .submit {
+.login-content .submit {
     padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home-content .submit button {
+.login-content .submit button {
     border: transparent;
     padding: 20px 201px;
     border-radius: 10px;
@@ -98,4 +97,14 @@
     color: white;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid;
+
+}
+
+.submit button:hover {
+    background-color: transparent;
+    border-color: #00b594;
+    color: #00b594;
 }

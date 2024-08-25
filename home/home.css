@@ -1,3 +1,17 @@
+body {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+body.loaded {
+    opacity: 1; /* Fully visible */
+}
+
+body.unloaded {
+    opacity: 0; /* Fade out effect */
+}
+
+
 .navbar ul li a.home {
     text-decoration: underline;
     color: rgb(2, 2, 189);
@@ -11,4 +25,72 @@
 
 .navbar ul li a:hover {
     color: rgb(2, 2, 189);
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    /* Centers the .wrapper horizontally */
+    align-items: center;
+    /* Centers the .wrapper vertically */
+    height: 100vh;
+    /* Ensures the .wrapper is vertically centered in the viewport */
+}
+
+.wrapper {
+    height: 600px;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.home-content .model-image {
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+}
+
+.home-description {
+    background-color: #e8f4ff;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    justify-content: space-between;
+
+}
+
+.home-description h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 50px;
+    font-size: 500;
+    color: #4e4e4e;
+    line-height: 35px;
+}
+
+.home-content button {
+    color: white;
+    border-radius: 5px;
+    background-color: #00b594;
+    border: transparent;
+    height: 50px;
+    width: 200px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #00b594;
+    color: #00b594;
 }
