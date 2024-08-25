@@ -1,17 +1,3 @@
-body {
-    opacity: 1;
-    transition: opacity 1s ease-in-out; /* Smooth fade transition */
-}
-
-body.loaded {
-    opacity: 1; /* Fully visible */
-}
-
-body.unloaded {
-    opacity: 0; /* Fade out effect */
-}
-
-
 .navbar ul li a.home {
     text-decoration: underline;
     color: rgb(2, 2, 189);
