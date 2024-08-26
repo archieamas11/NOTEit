@@ -4,27 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAHSBOARD</title>
+    <title>DASHBOARD</title>
     <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/665d03e83d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
+    <section class="dashboard">
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <div class="side-bar">
+                <h1>Note<span>It!</span></h1>
 
+                <div class="menu-1">
+                    <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'notes')">
+                        <img width="24" height="24"
+                            src="https://img.icons8.com/fluency-systems-regular/24/create-new.png" alt="create-new" />
+                        <p>All Notes</p>
+                    </a>
+                </div>
 
+                <div class="menu-2">
+                    <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'favorites')">
+                        <img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/24/like--v1.png"
+                            alt="like--v1" />
+                        <p>Favorites</p>
+                    </a>
+                </div>
 
-    
+                <div class="menu-3">
+                    <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'archives')">
+                        <img width="24" height="24"
+                            src="https://img.icons8.com/fluency-systems-regular/24/archive-folder.png"
+                            alt="archive-folder" />
+                        <p>Archives</p>
+                    </a>
+                </div>
 
+                <div class="menu-4">
+                    <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'logout')">
+                        <img width="24" height="24"
+                            src="https://img.icons8.com/fluency-systems-regular/24/logout-rounded.png"
+                            alt="logout-rounded" />
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
 
+            <!-- Page Content -->
+            <div class="content">
+                <div class="topbar">
+                    <div id="notes" class="tabcontent">
+                        <h1>All Notes</h1>
+                    </div>
+                    <div class="search-container">
+                        <form action="#">
+                            <input type="text" placeholder="Search" name="search">
+                        </form>
+                    </div>
+                    <div class="addnotes">
+                        <button class="addnotebtn"><span>+</span> Add Notes</button>
+                    </div>
+                </div>
 
+                <div id="favorites" class="tabcontent" style="display:none">
+                    <h1>Favorites</h1>
+                </div>
 
+                <div id="archives" class="tabcontent" style="display:none">
+                    <h1>Archives</h1>
+                </div>
 
+                <div id="logout" class="tabcontent" style="display:none">
+                    <h1>Logout</h1>
+                </div>
+            </div>
 
+        </div>
 
-
-
-
-
-
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </section>
 </body>
 
 </html>
