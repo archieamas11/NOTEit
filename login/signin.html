@@ -50,16 +50,19 @@
                                 Forgot Password?
                             </a>
                         </div>
-                        <div class="submit""> 
-                            <a href=" ../dashboard/dashboard.html">
-                            <button>SIGN IN</button>
-                            </a>
-                        </div>
+                        <div class="submit">
+                            <button type="button" onclick="login()">SIGN IN</button>
+                        </div>                        
                     </div>
                 </form>
             </div>
     </section>
-
+    <script>
+        function login() {
+            window.location.href = "../dashboard/dashboard.html";
+        }
+    </script>
+    
 
 </body>
 

@@ -10,6 +10,10 @@
     background-color: #3d8779;
 }
 
+.tablink.active p {
+    color: white;
+}
+
 .dashboard {
     height: 100vh;
 }
@@ -23,6 +27,30 @@
     background-color: #00b594;
     width: 15%;
     height: 100vh;
+}
+
+.side-bar .profile {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    height: 90px;
+    margin-top: 400px;
+}
+
+.side-bar .profile img {
+    height: 70px;
+    margin-left: 35px;
+}
+
+.side-bar .profile h1 {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.side-bar .profile span {
+    font-weight: 500;
+    color: black;
 }
 
 .side-bar h1 {
@@ -69,7 +97,8 @@ a:hover {
     width: 90%;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+    overflow: auto;
+    box-sizing: border-box;
 }
 
 .content .topbar {
@@ -85,7 +114,6 @@ a:hover {
 
 .content .topbar .search-container input {
     margin-left: 650px;
-    background-color: #f7fdf5;
     border-radius: 20px;
     border: 2px solid;
     letter-spacing: 2px;
@@ -121,4 +149,67 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.content .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 30px;
+}
+
+.note {
+    border: 2px solid;
+    border-color: rgb(219, 219, 219);
+    margin: 20px;
+    border-radius: 20px;
+    height: 330px;
+    width: 320px;
+}
+
+.grid-container h1 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.grid-container span {
+    background-color: orange;
+    color: orange;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.note h1,
+.note p,
+.note h5 {
+    margin: 20px;
+}
+
+.note {
+    transition: transform 0.5s ease;
+}
+
+.note:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(167, 167, 167, 0.527);
+    border: transparent;
+}
+
+.grid-container p {
+    color: rgb(71, 71, 71);
+    font-weight: 500;
+}
+
+.grid-container h5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(175, 175, 175);
+    font-weight: 400;
+    margin-top: 150px;
 }

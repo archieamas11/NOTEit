@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="dashboard.css">
     <script src="https://kit.fontawesome.com/665d03e83d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <style>
+        .tablink.active p {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +21,6 @@
             <!-- Sidebar -->
             <div class="side-bar">
                 <h1>Note<span>It!</span></h1>
-
                 <div class="menu-1">
                     <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'notes')">
                         <img width="24" height="24"
@@ -24,7 +28,6 @@
                         <p>All Notes</p>
                     </a>
                 </div>
-
                 <div class="menu-2">
                     <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'favorites')">
                         <img width="24" height="24" src="https://img.icons8.com/fluency-systems-regular/24/like--v1.png"
@@ -32,7 +35,6 @@
                         <p>Favorites</p>
                     </a>
                 </div>
-
                 <div class="menu-3">
                     <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'archives')">
                         <img width="24" height="24"
@@ -41,17 +43,19 @@
                         <p>Archives</p>
                     </a>
                 </div>
-
                 <div class="menu-4">
-                    <a href="javascript:void(0)" class="tablink" onclick="openTab(event, 'logout')">
+                    <a href="javascript:void(0)" class="tablink" onclick="logout()">
                         <img width="24" height="24"
                             src="https://img.icons8.com/fluency-systems-regular/24/logout-rounded.png"
                             alt="logout-rounded" />
                         <p>Logout</p>
                     </a>
                 </div>
+                <div class="profile">
+                    <img src="../images/profile.png" alt="">
+                    <h1>Hi Archie! <br> <span>Welcome back.</span></h1>
+                </div>
             </div>
-
             <!-- Page Content -->
             <div class="content">
                 <div class="topbar">
@@ -67,23 +71,75 @@
                         <button class="addnotebtn"><span>+</span> Add Notes</button>
                     </div>
                 </div>
-
+                <div class="grid-container">
+                    <div class="note">
+                        <h1>Notes 1</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 2</h1>
+                        <p>Testing Notes are pinrted here......</p>
+                        <p>Testung Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 3</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 4</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 5</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 6</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 7</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 8</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                    <div class="note">
+                        <h1>Notes 9</h1>
+                        <p>This is a sample notes printed here.</p>
+                        <p>Testing Notes are pinrted here......</p>
+                        <h5><span>.</span>March 03, 2024</h5>
+                    </div>
+                </div>
+                <!-- More tabs content... -->
                 <div id="favorites" class="tabcontent" style="display:none">
                     <h1>Favorites</h1>
                 </div>
-
                 <div id="archives" class="tabcontent" style="display:none">
                     <h1>Archives</h1>
                 </div>
-
-                <div id="logout" class="tabcontent" style="display:none">
-                    <h1>Logout</h1>
-                </div>
             </div>
-
         </div>
-
         <script>
+            function logout() {
+                window.location.href = "../home/home.html";
+            }
             function openTab(evt, tabName) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
