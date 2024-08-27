@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="dashboard.css">
     <script src="https://kit.fontawesome.com/665d03e83d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <style>
-        .tablink.active p {
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -74,59 +69,60 @@
                 <div class="grid-container">
                     <div class="note">
                         <h1>Notes 1</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 2</h1>
-                        <p>Testing Notes are pinrted here......</p>
-                        <p>Testung Notes are pinrted here......</p>
+                        <p>Testing notes are printed here...</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 3</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 4</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 5</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 6</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 7</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 8</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                     <div class="note">
                         <h1>Notes 9</h1>
-                        <p>This is a sample notes printed here.</p>
-                        <p>Testing Notes are pinrted here......</p>
+                        <p>This is a sample note printed here.</p>
+                        <p>Testing notes are printed here...</p>
                         <h5><span>.</span>March 03, 2024</h5>
                     </div>
                 </div>
+
                 <!-- More tabs content... -->
                 <div id="favorites" class="tabcontent" style="display:none">
                     <h1>Favorites</h1>
@@ -137,23 +133,43 @@
             </div>
         </div>
         <script>
+            window.onload = function () {
+                document.querySelector('.menu-1 .tablink').click();
+            };
+
             function logout() {
                 window.location.href = "../home/home.html";
             }
+
             function openTab(evt, tabName) {
                 var i, tabcontent, tablinks;
+
+                // Hide all tab contents
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) {
                     tabcontent[i].style.display = "none";
                 }
+
+                // Remove the 'active' class from all tab links
                 tablinks = document.getElementsByClassName("tablink");
                 for (i = 0; i < tablinks.length; i++) {
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
+
+                // Show the current tab and add 'active' class to the clicked tab link
                 document.getElementById(tabName).style.display = "block";
                 evt.currentTarget.className += " active";
+
+                // Show the grid-container only when 'notes' tab is selected
+                var gridContainer = document.querySelector('.grid-container');
+                if (tabName === 'notes') {
+                    gridContainer.style.display = 'grid';
+                } else {
+                    gridContainer.style.display = 'none';
+                }
             }
         </script>
+
     </section>
 </body>
 
