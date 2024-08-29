@@ -13,7 +13,6 @@
     color: white;
 }
 
-
 .tablink.active {
     background-color: #3d8779;
 }
@@ -117,7 +116,7 @@ a:hover {
 }
 
 .content .topbar .search-container input {
-    margin-left: 650px;
+    margin-left: 700px;
     border-radius: 20px;
     border: 2px solid;
     letter-spacing: 2px;
