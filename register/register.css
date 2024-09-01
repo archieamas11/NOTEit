@@ -1,6 +1,6 @@
 .navbar ul li a.register {
     text-decoration: underline;
-    color: rgb(2, 2, 189);
+    color: #00b594;
 }
 
 .navbar ul li a.signin,
@@ -10,26 +10,160 @@
 }
 
 .navbar ul li a:hover {
-    color: rgb(2, 2, 189);
+    color: #00b594;
 }
 
 /* FOR SIGN IN CONTENT */
-.login-content {
+.register-content {
     display: flex;
     justify-content: center;
-    /* Centers the .wrapper horizontally */
     align-items: center;
-    /* Centers the .wrapper vertically */
     height: 100vh;
-    /* Ensures the .wrapper is vertically centered in the viewport */
 }
 
 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.left {
+    background-color: #e8f4ff;
+    width: 450px;
     height: 600px;
-    width: 1000px;
+    border-radius: 20px;
+}
+
+.left .logo,
+.content {
+    padding-bottom: 10px;
+    margin: 35px;
+}
+
+.left .content h2 {
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #272727;
+}
+
+.left .content h3 {
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(116, 116, 116);
+}
+
+.right {
+    width: 500px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
+
+.right-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.right .header h1 {
+    font-weight: 600;
+    color: #272727;
+}
+
+.right .header p {
+    font-weight: 500;
+    color: rgb(126, 126, 126);
+    padding-bottom: 30px;
+}
+
+.wrapper input {
+    border-radius: 5px;
+    border: 2px solid #dadada;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.right p {
+    padding-bottom: 5px;
+    padding-top: 15px;
+    color: #858585;
+    font-size: 14px;
+}
+
+.submit {
+    padding-top: 50px;
+}
+
+.submit button {
+    border: transparent;
+    padding: 15px 110px;
+    border-radius: 10px;
+    background-color: #00b594;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid;
+}
+
+.login p {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.submit button:hover {
+    background-color: transparent;
+    border-color: #00b594;
+    color: #00b594;
+}
+
+.login a {
+    cursor: pointer;
+    color: #00b594;
+}
+
+.logo img {
+    background-color: #00b594;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .divuser h1 {
     font-size: 60px;

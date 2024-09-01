@@ -1,6 +1,6 @@
 .navbar ul li a.signin {
     text-decoration: underline;
-    color: rgb(2, 2, 189);
+    color: #00b594;
 }
 
 .navbar ul li a.register,
@@ -10,7 +10,7 @@
 }
 
 .navbar ul li a:hover {
-    color: rgb(2, 2, 189);
+    color: #00b594;
 }
 
 /* FOR SIGN IN CONTENT */
@@ -69,6 +69,10 @@
     font-size: 16px;
 }
 
+.sign-and-forgot a {
+    color: #00b594;
+}
+
 .sign-and-forgot label {
     color: #858585;
     font-weight: 500;
@@ -100,7 +104,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: 2px solid;
-
 }
 
 .submit button:hover {
