@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #3d8779;
+    --secondary-color: #e8f4ff;
+}
+
 /* General Styles */
 * {
     margin: 0;
@@ -7,7 +12,7 @@
 
 .navbar ul li a.register {
     text-decoration: underline;
-    color: #00b594;
+    color: var(--primary-color);
 }
 
 .navbar ul li a.signin,
@@ -17,7 +22,7 @@
 }
 
 .navbar ul li a:hover {
-    color: #00b594;
+    color: var(--primary-color);
 }
 
 /* Register Content */
@@ -48,7 +53,7 @@
 }
 
 .left {
-    background-color: #e8f4ff;
+    background-color: var(--secondary-color);
     border-radius: 10px 10px 0 0;
 }
 
@@ -69,7 +74,6 @@
     font-size: 16px;
     color: rgb(116, 116, 116);
     padding-bottom: 150px;
-
 }
 
 .left .tweet {
@@ -158,8 +162,8 @@
 }
 
 .wrapper input:focus {
-    border-color: #00b594;
-    box-shadow: 0 0 5px rgba(0, 181, 148, 0.5);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 86, 106, 0.5);
     outline: none;
 }
 
@@ -178,7 +182,7 @@
     border: transparent;
     padding: 15px;
     border-radius: 10px;
-    background-color: #00b594;
+    background-color: var(--primary-color);
     color: white;
     font-size: 20px;
     font-weight: 600;
@@ -189,8 +193,8 @@
 
 .submit button:hover {
     background-color: transparent;
-    border: 1px solid #00b594;
-    color: #00b594;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .login p {
@@ -200,11 +204,11 @@
 
 .login a {
     cursor: pointer;
-    color: #00b594;
+    color: var(--primary-color);
 }
 
 .logo img {
-    background-color: #00b594;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 50%;
 }
@@ -229,11 +233,9 @@
     .left .content h3 {
         padding-bottom: 150px;
     }
-
 }
 
 @media (max-width: 767px) {
-
     .left,
     .right {
         border-radius: 10px;

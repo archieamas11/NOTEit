@@ -1,0 +1,71 @@
+[33mcommit 12dbb2912d0aa2fb7c017214aa854005a0243152[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gwapoko10 <bartoloms122@gmail.com>
+Date:   Sat Sep 21 14:10:59 2024 +0800
+
+    fixes
+
+[33mcommit 28109d2daec1f97670f9faa5819d80494d90356f[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Sat Sep 21 04:09:32 2024 +0800
+
+    "Updated CSS and HTML files for home, login, and register pages, including changes to layout, styling, and responsive design."
+
+[33mcommit 3dd96a47c1c152fb9e12d23adc3bc7194c2289d1[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Mon Sep 2 02:30:49 2024 +0800
+
+    "Updated CSS and HTML files for home, login, and register pages, including changes to navigation bar styles, sign in and register content layouts, and input field designs."
+
+[33mcommit 6e795e846d54b45a7284703987d0275c84d4e3c5[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Thu Aug 29 11:36:55 2024 +0800
+
+    "Updated dashboard and register CSS and HTML files with new styles and layout for login and sign in functionality."
+
+[33mcommit f252d977e08da66cf61a3d92d52bd099d7e28dfd[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Tue Aug 27 21:53:59 2024 +0800
+
+    "Updated dashboard CSS and HTML files: modified styles for tab links, notes, and grid container; removed inline styles; and added JavaScript code for tab functionality and grid container display."
+
+[33mcommit 66d89c4ba71d2c6b2e5fc36b1dbaa233f6764a7b[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Tue Aug 27 15:17:41 2024 +0800
+
+    "Updated dashboard CSS and HTML files, added profile section to sidebar, and modified login and logout functionality."
+
+[33mcommit d716f753bbe7f65007763ac1e5b7d2133c044fcb[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Tue Aug 27 00:52:28 2024 +0800
+
+    "Updated dashboard CSS and HTML files, added JavaScript code for tab functionality, and modified login HTML file."
+
+[33mcommit cb9cf254fbffe8e6ab2ab98c552ee57148b2009d[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Sun Aug 25 20:01:34 2024 +0800
+
+    "Removed body styles and transition, kept navbar styles"
+
+[33mcommit 308ca77a2dd56e54321e6fc29d5ef56b160ffcdb[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Sun Aug 25 20:00:45 2024 +0800
+
+    "Updated home and login pages with new CSS styles and HTML structure, added transition.js script to home page"
+
+[33mcommit 08676feda5389cc0f7930a4d2c20021ac43922d0[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Sun Aug 25 18:44:09 2024 +0800
+
+    "Updated HTML files to reference CSS files with relative paths, and updated navigation links to point to correct locations."
+
+[33mcommit 3a022ac9e79a1320aba9d02c2e0d691bfd4b93a4[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Sun Aug 25 18:29:27 2024 +0800
+
+    clean up
+
+[33mcommit af5a3cc2824cb50d0d990d76be2927b708b1768a[m
+Author: archieamas11 <archiealbarico69@gmail.com>
+Date:   Sun Aug 25 18:23:28 2024 +0800
+
+    initial commit
