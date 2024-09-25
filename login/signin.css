@@ -1,145 +1,113 @@
 .navbar ul li a.signin {
-  text-decoration: underline;
-  color: #00b594;
+    text-decoration: underline;
+    color: #00b594;
 }
 
 .navbar ul li a.register,
 .navbar ul li a.home {
-  color: #272727;
-  text-decoration: none;
+    color: #272727;
+    text-decoration: none;
 }
 
 .navbar ul li a:hover {
-  color: #00b594;
+    color: #00b594;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* FOR SIGN IN CONTENT */
 .login-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Centers the .wrapper horizontally */
+    align-items: center;
+    /* Centers the .wrapper vertically */
+    height: 100vh;
+    /* Ensures the .wrapper is vertically centered in the viewport */
 }
 
 .wrapper {
-  max-width: 900px;
-  width: 100%;
-}
-
-.container {
-  width: 70%;
-  max-width: 1000px;
-  height: 100%;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    padding: 15px;
-  }
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
 }
 
 .divuser h1 {
-  font-size: 60px;
-  color: #272727;
-  font-weight: 800;
-  text-align: center;
-  padding-bottom: 50px;
+    font-size: 60px;
+    color: #272727;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .divpass input,
 .divuser input {
-  border-radius: 5px;
-  border: 2px solid #dadada;
-  width: 100%;
-  margin: 10px 0;
-  box-sizing: border-box;
-  height: 50px;
-  padding: 10px;
-  font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #dadada;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .divuser p,
 .divpass p {
-  padding-bottom: 5px;
-  padding-top: 15px;
-  color: #858585;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    color: #858585;
 }
 
 .divpass p {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .sign-and-forgot {
-  padding-top: 20px;
-  justify-content: space-between;
-  display: flex;
-  font-size: 16px;
+    padding-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 16px;
 }
 
 .sign-and-forgot a {
-  color: #00b594;
+    color: #00b594;
 }
 
 .sign-and-forgot label {
-  color: #858585;
-  font-weight: 500;
+    color: #858585;
+    font-weight: 500;
 }
 
-.sign-and-forgot input[type='checkbox'] {
-  width: 25px;
-  height: 20px;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-right: 5px;
+.sign-and-forgot input[type="checkbox"] {
+    width: 25px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 .login-content .submit {
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.submit button {
-  border: transparent;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: #00b594;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%;
-}
-
-.submit button:hover {
-  background-color: transparent;
-  border: 1px solid #00b594;
-  color: #00b594;
+.login-content .submit button {
+    border: transparent;
+    padding: 20px 201px;
+    border-radius: 10px;
+    background-color: #00b594;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid;
 }
 
 .submit button:hover {
-  background-color: transparent;
-  border-color: #00b594;
-  color: #00b594;
+    background-color: transparent;
+    border-color: #00b594;
+    color: #00b594;
 }
-
-@media (max-width: 768px) {
-  .submit button {
-    font-size: 10vm;
-  }
-}
-
-@media (min-width: 1181px) {}

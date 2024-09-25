@@ -1,134 +1,128 @@
-.navbar ul li a.signin {
-  text-decoration: underline;
-  color: #00b594
-}
-
-.navbar ul li a.home,
-.navbar ul li a.register {
-  color: #272727;
-  text-decoration: none
-}
-
-.navbar ul li a:hover,
-.sign-and-forgot a {
-  color: #00b594
-}
-
 * {
-  box-sizing: border-box
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
-.login-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
-.wrapper {
-  max-width: 900px;
-  width: 100%
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 50px 0 0 0;
 }
 
-.container {
-  width: 70%;
-  max-width: 1000px;
-  height: 100%;
-  padding: 20px;
-  margin: 0 auto
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
 }
 
-@media (max-width:768px) {
-  .container {
-    padding: 10px
-  }
+/* CSS FOR NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
 }
 
-@media (min-width:769px) and (max-width:1024px) {
-  .container {
-    padding: 15px
-  }
+.navdiv {
+    margin: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-.divuser h1 {
-  font-size: 60px;
-  color: #272727;
-  font-weight: 800;
-  text-align: center;
-  padding-bottom: 50px
+.navbar ul {
+    display: flex;
+    list-style: none;
 }
 
-.divpass input,
-.divuser input {
-  border-radius: 5px;
-  border: 2px solid #dadada;
-  width: 100%;
-  margin: 10px 0;
-  box-sizing: border-box;
-  height: 50px;
-  padding: 10px;
-  font-size: 16px
+.navbar ul li {
+    margin: 0 20px;
 }
 
-.divpass p,
-.divuser p {
-  padding-bottom: 5px;
-  padding-top: 15px;
-  color: #858585
+.navbar ul li a {
+    color: #272727;
+    font-weight: 600;
+    font-size: 19px;
+    transition: transform 0.3s ease;
 }
 
-.divpass p,
-.sign-and-forgot {
-  padding-top: 20px
+.logo h1 {
+    color: #272727;
+    font-weight: 800;
+    font-size: 30px;
 }
 
-.sign-and-forgot {
-  justify-content: space-between;
-  display: flex;
-  font-size: 16px
+span {
+    color: #00b594;
 }
 
-.sign-and-forgot label {
-  color: #858585;
-  font-weight: 500
+/* Hamburger Menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.sign-and-forgot input[type=checkbox] {
-  width: 25px;
-  height: 20px;
-  vertical-align: middle;
-  cursor: pointer;
-  margin-right: 5px
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #272727;
+    margin: 4px;
+    transition: all 0.3s ease;
 }
 
-.login-content .submit {
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
+/* For mobile screens */
+@media (max-width: 768px) {
+    .navdiv {
+        justify-content: space-between;
+    }
 
-.submit button {
-  border: transparent;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: #00b594;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color .3s;
-  width: 100%
-}
+    .navbar ul {
+        position: fixed;
+        top: 90px;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
 
-.submit button:hover {
-  border: 1px solid #00b594;
-  background-color: transparent;
-  color: #00b594
-}
+    .navbar ul li {
+        margin: 20px 0;
+    }
 
-@media (max-width:768px) {
-  .submit button {
-    font-size: 10vm
-  }
+    .navbar ul.show {
+        transform: translateX(0);
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* Burger animation */
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
