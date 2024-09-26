@@ -16,18 +16,24 @@
             <a href="home.html" class="logo">
                 <h1>Note<span>It!</span></h1>
             </a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="../home/home.html" class="home">HOME</a></li>
                 <li><a href="../register/register.html" class="register">REGISTER</a></li>
                 <li><a href="../login/signin.html" class="signin">SIGN IN</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" onclick="toggleMenu()">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
         </div>
     </nav>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navdiv ul');
+            nav.classList.toggle('nav-active');
+        }
+    </script>
 
     <section class="home">
         <div class="home-content">
