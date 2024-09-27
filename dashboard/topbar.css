@@ -1,23 +1,41 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
 .topbar h1 {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.topbar .search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .topbar .search-container input {
-    margin-left: 700px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 2px solid;
     letter-spacing: 2px;
     border-color: rgb(219, 219, 219);
     height: 50px;
-    width: 320px;
+    width: 500px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.topbar .addnotes {
+    display: flex;
+    align-items: center;
 }
 
 .topbar .addnotes .addnotebtn {
-    margin-left: 30px;
     height: 50px;
     width: 150px;
     border: transparent;
@@ -45,18 +63,16 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .topbar .search-container input {
-        margin-left: 500px;
         width: 280px;
     }
 }
 
 @media (max-width: 992px) {
     .topbar h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .topbar .search-container input {
-        margin-left: 300px;
         width: 240px;
     }
 
@@ -74,12 +90,11 @@
 
 @media (max-width: 768px) {
     .topbar h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .topbar .search-container input {
-        margin-left: 100px;
-        width: 200px;
+        width: 150px;
     }
 
     .topbar .addnotes .addnotebtn {
@@ -95,13 +110,28 @@
 }
 
 @media (max-width: 576px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .topbar h1 {
         font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .topbar .search-container {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .topbar .search-container input {
-        margin-left: 0;
         width: 100%;
+    }
+
+    .topbar .addnotes {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .topbar .addnotes .addnotebtn {

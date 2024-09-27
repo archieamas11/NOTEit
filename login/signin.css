@@ -17,18 +17,47 @@
 .login-content {
     display: flex;
     justify-content: center;
-    /* Centers the .wrapper horizontally */
     align-items: center;
-    /* Centers the .wrapper vertically */
     height: 100vh;
-    /* Ensures the .wrapper is vertically centered in the viewport */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .wrapper {
-    height: 600px;
-    width: 1000px;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.wrapper div {
+    width: 300px;
+    max-width: 100%;
 }
 
 .divuser h1 {
@@ -67,6 +96,7 @@
     justify-content: space-between;
     display: flex;
     font-size: 16px;
+    flex-wrap: wrap;
 }
 
 .sign-and-forgot a {
@@ -91,11 +121,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .login-content .submit button {
     border: transparent;
-    padding: 20px 201px;
+    padding: 20px 10%;
     border-radius: 10px;
     background-color: #00b594;
     color: white;
@@ -104,7 +135,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: 2px solid;
+    width: 100%;
 }
+
 
 .submit button:hover {
     background-color: transparent;
