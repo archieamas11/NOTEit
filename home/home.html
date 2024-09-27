@@ -16,7 +16,7 @@
             <a href="home.html" class="logo">
                 <h1>Note<span>It!</span></h1>
             </a>
-            <ul class="nav-links">
+            <ul id="nav-links" class="nav-links">
                 <li><a href="../home/home.html" class="home">HOME</a></li>
                 <li><a href="../register/register.html" class="register">REGISTER</a></li>
                 <li><a href="../login/signin.html" class="signin">SIGN IN</a></li>
@@ -30,8 +30,11 @@
     </nav>
     <script>
         function toggleMenu() {
-            const nav = document.querySelector('.navdiv ul');
-            nav.classList.toggle('nav-active');
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+
+            const burger = document.querySelector(".burger");
+            burger.classList.toggle("toggle");
         }
     </script>
 

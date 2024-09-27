@@ -38,6 +38,7 @@ section {
     align-items: center;
     max-width: 1200px;
     padding: 0 20px;
+    background-color: white;
 }
 
 .navbar ul {
@@ -126,3 +127,4 @@ span {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+

@@ -1,0 +1,62 @@
+.side-bar {
+    display: flex;
+    /* Changed from table-column to flex */
+    flex-direction: column;
+    /* Optional: to arrange items in a column */
+}
+
+.tablink.active {
+    background-color: #3d87796c;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.tablink.active.favorites,
+.tablink.active.archives {
+    background-color: #3d87796c;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.profile h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.profile h1 span {
+    font-size: 14px;
+    color: #777;
+}
